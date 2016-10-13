@@ -3,6 +3,5 @@
 .project
 .classpath
 target/
-doc/
 home/
 .svn/
