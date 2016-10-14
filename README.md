@@ -15,3 +15,16 @@ Dr. Inventor Text Mining Framework is a standalone Java library that enable user
 * etc.
 
 All these facets of a paper are automatically mined and can be easily accessed thanks to the set of method and classes defined by the Dr. Inventor Text Mining Framework.
+
+## Documentation
+The documentation of the Dr. Inventor Text Mining Framework can be accessed at: <a href="http://driframework.readthedocs.io/" target="_blank">http://driframework.readthedocs.io/</a>.
+
+
+## Credits
+Dr. Inventor Text Mining Framework is developed by <a href="http://taln.upf.edu/" target="_blank">TALN - UPF</a> in the context of <a href="http://drinventor.eu/" target="_blank">Dr. Inventor Project</a>.
+
+To cite Dr. Inventor Framework:
+Ronzano, F., & Saggion, H. (2015). *Dr. Inventor Framework: Extracting Structured Information from Scientific Publications.* In Discovery Science (pp. 209-220). Springer International Publishing. <a href="http://link.springer.com/chapter/10.1007%2F978-3-319-24282-8_18" target="_blank">Web Link</a>
+
+## Are you using Dr. Inventor Framework to support any scientific publications analysis task?
+Please, let us know by sending an email to: <a href="mailto:francesco.ronzano@upf.edu">francesco.ronzano AT upf.edu</a>.
