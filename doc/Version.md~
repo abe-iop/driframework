@@ -2,7 +2,7 @@
 
 **Latest version: 2.3, released on: 10/10/2016**
 
-## New features of library versions
+## Version changes
 
 ### New features of version 2.3:
 * New, improved ROS generation methods: it is possible to generate a ROS from a paper (or an excerpt of it) by relying on the new pair of complementary methods: getDocumentROSasCSVstring and getSentencesCSVstring. The first method is useful to get the ROD graph of a document, the second method is useful to get the contents and metadata concerning the sentences of the same document. The new ROS includes the following improvements / additions:
