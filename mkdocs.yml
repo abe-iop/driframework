@@ -21,6 +21,6 @@ pages:
 - ['Initialize.md', 'User manual', 'Initialize the library']
 - ['ImportDoc.md', 'User manual', 'Import scientific publications']
 - ['ProcessDoc.md', 'User manual', 'Process scientific publications']
-- ['BrowseDoc.md', 'User manual', 'Browse the mined data']
+- ['BrowseDoc.md', 'User manual', 'Browse the scientific publication data model']
 - ['StoreDoc.md', 'User manual', 'Store processing results']
 - ['FAQ.md', 'User manual', 'FAQ']

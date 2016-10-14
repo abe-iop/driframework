@@ -23,4 +23,4 @@ pages:
 - ['ProcessDoc.md', 'User manual', 'Process scientific publications']
 - ['BrowseDoc.md', 'User manual', 'Browse the mined data']
 - ['StoreDoc.md', 'User manual', 'Store processing results']
-- ['FAW.md', 'User manual', 'FAQ']
+- ['FAQ.md', 'User manual', 'FAQ']
