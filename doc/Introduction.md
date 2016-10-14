@@ -1,1 +1,2 @@
-This is a test
+Dr. Inventor Text Mining Framework is a self-contained java library that enables the automated analysis of scientific publications. This libary is intended to support researchres as well as any other interested actor in easily bootstrapping any automated analysis and study of scientific articles.
+Given a paper (PDF or JATS XML), a set of Java methods and classes enables the access to the results of the analysis performed by the Framework.
