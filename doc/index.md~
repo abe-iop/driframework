@@ -1,0 +1,37 @@
+<h1>Dr. Inventor Text Mining Framework Documentation</h1>
+
+
+<h3>About</h3>
+
+* [Introduction](Introduction.md)
+
+* [References](References.md)
+
+* [PDF-to-text converter](PDFtoText.md)
+
+* [Version](Version.md)
+
+<h3>Architecture</h3>
+
+* [Overview](Components.md)
+
+
+
+- ['index.md', 'Home']
+- ['Introduction.md', 'About', 'Introduction']
+- ['References.md', 'About', 'References']
+- ['Version.md', 'About', 'Version']
+- ['Components.md', 'Architecture', 'Overview']
+- ['PDFtoText.md', 'Architecture', 'PDF to text converter']
+- ['Citation.md', 'Architecture', 'Citation analyzer']
+- ['RhetSentence.md', 'Architecture', 'Rhetorical sentence classifier']
+- ['BabelnetAnn.md', 'Architecture', 'Babelnet annotator']
+- ['ROSgraph.md', 'Architecture', 'Graph generator']
+- ['Summa.md', 'Architecture', 'Document summarizer']
+- ['Installation.md', 'User manual', 'Installation']
+- ['Initialize.md', 'User manual', 'Initialize the library']
+- ['ImportDoc.md', 'User manual', 'Import scientific publications']
+- ['ProcessDoc.md', 'User manual', 'Process scientific publications']
+- ['BrowseDoc.md', 'User manual', 'Browse the scientific publication data model']
+- ['StoreDoc.md', 'User manual', 'Store processing results']
+- ['FAQ.md', 'User manual', 'FAQ']
