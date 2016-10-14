@@ -6,9 +6,9 @@
 
 ### New features of version 2.3:
 * New, improved ROS generation methods: it is possible to generate a ROS from a paper (or an excerpt of it) by relying on the new pair of complementary methods: getDocumentROSasCSVstring and getSentencesCSVstring. The first method is useful to get the ROD graph of a document, the second method is useful to get the contents and metadata concerning the sentences of the same document. The new ROS includes the following improvements / additions:
-  * CUSE relations, besides SUBJECT and OBJECT ones (links a cause node to the corresponding effect node);
-  * nodes belonging to the same coreference chains are merged;
-  * node names improved (including multiword expressions).
+    * CUSE relations, besides SUBJECT and OBJECT ones (links a cause node to the corresponding effect node);
+    * nodes belonging to the same coreference chains are merged;
+    * node names improved (including multiword expressions).
 To get detailed information, please, access the javadoc of the ROS generation complementary methods: getDocumentROSasCSVstring and getSentencesCSVstring.
 * Possibility to parse plain text excerpts: it is possible to parse a text excerpt and load it in a Document by means of the following command:
 Document edu.upf.taln.dri.lib.model newDocument =

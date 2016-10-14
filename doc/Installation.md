@@ -1,7 +1,8 @@
 #Installation
 
 ## System requirements
-
+* Java 1.8
+* Define the maximum Java Heap Space equal or greater than 4,5Gb (by means of Virtual Machine arguments - -Xmx4500m - or by means of system properties)
 
 ## How to import and configure the library in your java project
 
@@ -35,14 +36,11 @@ once imported the library and its dependences, the following step should be carr
 1. Download and extract Dr. Inventor Library Resources directory in $DRI_RESOURCE_DIR_PATH
 2. Download Dr. Inventor Library Property file as $DRI_PROPERTY_FILE_PATH
 3. when executing a java program that imports and uses the Dr. Inventor Library, set the following virtual machine arguments:
-   * -DDRIpropertyFile=$DRI_PROPERTY_FILE_PATH (mandatory): local absolute path to Dr. Inventor Library property file. It is possible to download this file locally here. Once downloaded, it is needed edit the local copy of the Dr. Inventor Library property file by setting the property "resourceFolder.fullPath" equal to the Dr. Inventor Library Resources directory local path (without trailing slash, for instance: /home/mydir/DRIresources-2.1).
-   * -Xmx4500m (optional): maximum Java Heap (>= 4,5Gb)
+    * -DDRIpropertyFile=$DRI_PROPERTY_FILE_PATH (mandatory): local absolute path to Dr. Inventor Library property file. It is possible to download this file locally here. Once downloaded, it is needed edit the local copy of the Dr. Inventor Library property file by setting the property "resourceFolder.fullPath" equal to the Dr. Inventor Library Resources directory local path (without trailing slash, for instance: /home/mydir/DRIresources-2.1).
+    * -Xmx4500m (optional): maximum Java Heap (>= 4,5Gb)
  
-## Execution requirements
-* Java 1.8
-* Define the maximum Java Heap Space equal or greater than 4,5Gb (by means of Virtual Machine arguments - -Xmx4500m - or by means of system properties)
 
-## Update to a new version
+## How to update from an older version
 IMPORTANT: When updating from an older version of the library to the version 2.1, please, remember to:
 If the library is imported by Maven, update your project Maven POM with then new library version number
 If the JAR of the library is directly imported, Download the new JAR files of the library together with its dependencies
