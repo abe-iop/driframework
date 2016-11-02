@@ -44,24 +44,22 @@ Once imported the library and its dependences, the following step should be carr
 1. Download and extract [Dr. Inventor Framework Resources folder](http://backingdata.org/dri/library/latest/resourceFolder.html)
 2. Download [Dr. Inventor Framework Property file](http://backingdata.org/dri/library/latest/configurationFile.html)
 3. Modify the Dr. Inventor Framework Property file by setting:
-  * the value of the _resourceFolder.fullPath_ property equal to the full local path of the Dr. Inventor Framework Resources folder previously downloaded (the path should end WITHOUT the training slash)
-  * the value of the _babelnet.APIkey_ property equal to your BabelNet API Key - register to [BabelNet](http://babelnet.org/) to get your API key
-4. When executing a Java program that imports and uses the Dr. Inventor Framework you need to:
-  * specify the local path to the Dr. Inventor Framework Property file by one of the following methods:
+   * the value of the _resourceFolder.fullPath_ property equal to the full local path of the Dr. Inventor Framework Resources folder previously downloaded (the path should end WITHOUT the training slash)
+   * the value of the _babelnet.APIkey_ property equal to your BabelNet API Key - register to [BabelNet](http://babelnet.org/) to get your API key
+4. When executing a Java program that imports and uses the Dr. Inventor Framework you need to specify the local path to the Dr. Inventor Framework Property file by one of the following methods:
    * by means of a system property passed as the Java VM argument: _-DDRIpropertyFile=DRI-PROPERTY-FILE-LOCAL-PATH_
    * by means of the following initialization code / instruction: 
 ```javascript
 Factory.setDRIPropertyFilePath("DRI-PROPERTY-FILE-LOCAL-PATH");
 ```
-  * it is important to specify the Java VM argument: _-Xmx5096m_ in order to enable an heap size equal or greater than 5Gb
+   * it is important to specify the Java VM argument: _-Xmx5096m_ in order to enable an heap size equal or greater than 5Gb
  
 
 ## How to update from an older version
 When you update from an older to a newer version of the Dr. Inventor Text Mining Framework you shuould perform the following steps:
-
-  * If the library is imported by Maven, update the library version number of the dependency in your POM
-  * If the JAR of the library is imported by downloading the JAR together with all its dependencies, [download the compressed file](http://backingdata.org/dri/library/latest/jarWithDeps.html) including the latest JARs (library together with its dependencies)
-  * Download the new [Dr. Inventor Framework Resources folder](http://backingdata.org/dri/library/latest/resourceFolder.html)
-  * Download the new [Dr. Inventor Framework Property file](http://backingdata.org/dri/library/latest/configurationFile.html) and replace this file to its old version if any. Properly modify the properties of the new Dr. Inventor Framework Property file by specifying the local path of the new Dr Inventor Library Resources folder and in case the other property values previously described in this page (STEP 2: COnfigure the library).
+* If the library is imported by Maven, update the library version number of the dependency in your POM
+* If the JAR of the library is imported by downloading the JAR together with all its dependencies, [download the compressed file](http://backingdata.org/dri/library/latest/jarWithDeps.html) including the latest JARs (library together with its dependencies)
+* Download the new [Dr. Inventor Framework Resources folder](http://backingdata.org/dri/library/latest/resourceFolder.html)
+* Download the new [Dr. Inventor Framework Property file](http://backingdata.org/dri/library/latest/configurationFile.html) and replace this file to its old version if any. Properly modify the properties of the new Dr. Inventor Framework Property file by specifying the local path of the new Dr Inventor Library Resources folder and in case the other property values previously described in this page (STEP 2: COnfigure the library).
 
 Remember that each version of the library comes with its own Dr. Inventor Framework Resources folder and its own Dr. Inventor Framework Property file. You should update both these resources as explained when switching to another version of the Dr. Inventor Framework.
