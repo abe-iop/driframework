@@ -1,7 +1,9 @@
 The Dr. Inventor Text Mining Framework is a stand-alone java library that integrates, extends and customizes a collection of scientific text mining modules and services
 useful to support the joint analysis of structural, linguistic and semantic aspects of scientific publications. The Dr. Inventor Text Mining Framework is a software tool that has been conceived in the context of the European Project [Dr. Inventor](http://drinventor.eu/ "Dr. Inventor Project Homepage") in order to support the extraction of graph-based representations of scientific articles to spot interesting analogies among paris of papers.
 
-In order to get an architectural overview of the Dr. Inventor Text Mining Framework you can access the [Overview](Components) section.
+This documentation provides an [architectural overview](Components) of the Dr. Inventor Text Mining Framework.
+
+You can also access useraccess the [related](Components) section of this documentation.
 
 
 
