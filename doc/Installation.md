@@ -1,5 +1,3 @@
-#Installation
-
 In order to properly use the Dr. Inventor Text Mining Framework you need to satisfy the following requirements and perform the installation steps described hereinafter.
 
 ## System requirements
@@ -51,9 +49,9 @@ Once imported the library and its dependences, the following step should be carr
 
      + by means of a system property passed as the Java VM argument: _-DDRIpropertyFile=DRI-PROPERTY-FILE-LOCAL-PATH_
      + by means of the following initialization code / instruction:
-   ```javascript
-   Factory.setDRIPropertyFilePath("DRI-PROPERTY-FILE-LOCAL-PATH");
-   ```
+    ```javascript
+    Factory.setDRIPropertyFilePath("DRI-PROPERTY-FILE-LOCAL-PATH");
+    ```
 
  5. It is important to specify the Java VM argument: _-Xmx5096m_ in order to enable an heap size equal or greater than 5Gb
  

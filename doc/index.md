@@ -26,7 +26,7 @@ This documentation includes detailed information concerning the architecutre of 
 
 <h3>User manual</h3>
 
-* [Overview](Installation.md)
+* [Installation](Installation.md)
 * [Initialize the library](Initialize.md)
 * [Import scientific publications](ImportDoc.md)
 * [Process scientific publications](ProcessDoc.md)
