@@ -15,7 +15,7 @@ pages:
 - ['Citation.md', 'Architecture', 'Citation analyzer']
 - ['RhetSentence.md', 'Architecture', 'Rhetorical sentence classifier']
 - ['BabelnetAnn.md', 'Architecture', 'Babelnet annotator']
-- ['ROSgraph.md', 'Architecture', 'Graph generator']
+- ['SVOgraph.md', 'Architecture', 'Subject-Verb-Object graph generator']
 - ['Summa.md', 'Architecture', 'Document summarizer']
 - ['Installation.md', 'User manual', 'Installation']
 - ['Initialize.md', 'User manual', 'Initialization']
