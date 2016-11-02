@@ -20,7 +20,7 @@ This documentation includes detailed information concerning the [architecture](C
 * [Citation analyzer](Citation.md)
 * [Rhetorical sentence classifier](RhetSentence.md)
 * [Babelnet annotator](BabelnetAnn.md)
-* [Graph generator](ROSgraph.md)
+* [Subject-Verb-Object graph generator](SVOgraph.md)
 * [Document summarizer](Summa.md)
 
 

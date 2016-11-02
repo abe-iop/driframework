@@ -11,7 +11,7 @@ This documentation includes detailed information concerning the [architecture](C
 
 * [Introduction](Introduction.md)
 * [References](References.md)
-* [Versions](Version.md)
+* [Version](Version.md)
 
 <h3>Architecture</h3>
 
@@ -20,7 +20,7 @@ This documentation includes detailed information concerning the [architecture](C
 * [Citation analyzer](Citation.md)
 * [Rhetorical sentence classifier](RhetSentence.md)
 * [Babelnet annotator](BabelnetAnn.md)
-* [Graph generator](ROSgraph.md)
+* [Subject-Verb-Object graph generator](ROSgraph.md)
 * [Document summarizer](Summa.md)
 
 

@@ -1,1 +1,1 @@
-Components description
+Architectural overview of the library.

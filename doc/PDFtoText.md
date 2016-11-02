@@ -1,1 +1,1 @@
-Explanation of PDF-to-Text conversion options
+Explanation of PDF-to-Text conversion module.
