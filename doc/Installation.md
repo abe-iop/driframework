@@ -4,7 +4,6 @@ In order to properly use the Dr. Inventor Text Mining Framework you need to sati
 
 ## System requirements
 In order to use the Dr. Inventor Text Mining Framework you should:
-
 *  use *Java 1.8*
 *  set the maximum [Java Heap Space](https://www.mkyong.com/Java/find-out-your-Java-heap-memory-size/) equal or greater than *5Gb* (by means of Virtual Machine arguments -Xmx4500m, or by means of system properties)
 
@@ -15,7 +14,7 @@ In order to import the Dr. Inventor Text Mining Framework in your Java project y
 
 ### STEP 1: Import the Java library
 There are two approaches to import the Dr. Inventor Text Mining Framework Java library:
-1.  If you are using Maven, add to the POM of your Maven project the following repository:
+**Apprach A**: If you are using Maven, add to the POM of your Maven project the following repository:
 
 ```javascript
 <repositories>
@@ -36,23 +35,22 @@ and the following dependency (the number of the latest version of the Dr. Invent
 </dependency>
 ```
 
-2.  You can download [this compressed file](http://backingdata.org/dri/library/latest/jarWithDeps.html) including the library JAR together with all its dependencies so as to improt them in your Java code.
+**Apprach B**: You can download [this compressed file](http://backingdata.org/dri/library/latest/jarWithDeps.html) including the library JAR together with all its dependencies so as to improt them in your Java code.
 
 ### STEP 2: Configure the library
 Once imported the library and its dependences, the following step should be carried out:
-1.  Download and extract [Dr. Inventor Framework Resources folder](http://backingdata.org/dri/library/latest/resourceFolder.html)
-2.  Download [Dr. Inventor Framework Property file](http://backingdata.org/dri/library/latest/configurationFile.html)
-3.  Modify the Dr. Inventor Framework Property file by setting:
-	-  the value of the _resourceFolder.fullPath_ property equal to the full local path of the Dr. Inventor Framework Resources folder previously downloaded (the path should end WITHOUT the training slash)
-	-  the value of the _babelnet.APIkey_ property equal to your BabelNet API Key - register to [BabelNet](http://babelnet.org/) to get your API key
-4.  When executing a Java program that imports and uses the Dr. Inventor Framework you need to specify the local path to the Dr. Inventor Framework Property file by one of the following methods:
-	-  by means of a system property passed as the Java VM argument: _-DDRIpropertyFile=DRI-PROPERTY-FILE-LOCAL-PATH_
-	-  by means of the following initialization code / instruction:
+**1)** Download and extract [Dr. Inventor Framework Resources folder](http://backingdata.org/dri/library/latest/resourceFolder.html)  
+**2)** Download [Dr. Inventor Framework Property file](http://backingdata.org/dri/library/latest/configurationFile.html)  
+**3)** Modify the Dr. Inventor Framework Property file by setting:  
+	-  the value of the _resourceFolder.fullPath_ property equal to the full local path of the Dr. Inventor Framework Resources folder previously downloaded (the path should end WITHOUT the training slash)  
+	-  the value of the _babelnet.APIkey_ property equal to your BabelNet API Key - register to [BabelNet](http://babelnet.org/) to get your API key  
+**4)** When executing a Java program that imports and uses the Dr. Inventor Framework you need to specify the local path to the Dr. Inventor Framework Property file by one of the following methods:  
+	-  by means of a system property passed as the Java VM argument: _-DDRIpropertyFile=DRI-PROPERTY-FILE-LOCAL-PATH_  
+	-  by means of the following initialization code / instruction:  
    	```javascript
    	Factory.setDRIPropertyFilePath("DRI-PROPERTY-FILE-LOCAL-PATH");
-   	```
-5. it is important to specify the Java VM argument: _-Xmx5096m_ in order to enable an heap size equal or greater than 5Gb
- 
+   	```  
+**5)** it is important to specify the Java VM argument: _-Xmx5096m_ in order to enable an heap size equal or greater than 5Gb  
 
 ## How to update from an older version
 When you update from an older to a newer version of the Dr. Inventor Text Mining Framework you shuould perform the following steps:
