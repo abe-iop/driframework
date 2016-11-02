@@ -40,7 +40,6 @@ and the following dependency (the number of the latest version of the Dr. Invent
 
 ### STEP 2: Configure the library
 Once imported the library and its dependences, the following step should be carried out:
-
 1. Download and extract [Dr. Inventor Framework Resources folder](http://backingdata.org/dri/library/latest/resourceFolder.html)
 2. Download [Dr. Inventor Framework Property file](http://backingdata.org/dri/library/latest/configurationFile.html)
 3. Modify the Dr. Inventor Framework Property file by setting:
