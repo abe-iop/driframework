@@ -42,13 +42,15 @@ and the following dependency (the number of the latest version of the Dr. Invent
 Once imported the library and its dependences, the following step should be carried out:
 
 1 Download and extract [Dr. Inventor Framework Resources folder](http://backingdata.org/dri/library/latest/resourceFolder.html)
-2 Download [Dr. Inventor Framework Property file](http://backingdata.org/dri/library/latest/configurationFile.html) 
-2 Modify the Dr. Inventor Framework Property file by setting:
+
+2 Download [Dr. Inventor Framework Property file](http://backingdata.org/dri/library/latest/configurationFile.html)
+ 
+3 Modify the Dr. Inventor Framework Property file by setting:
 
   * the value of the _resourceFolder.fullPath_ property equal to the full local path of the Dr. Inventor Framework Resources folder previously downloaded (the path should end WITHOUT the training slash)
   * the value of the _babelnet.APIkey_ property equal to your BabelNet API Key - register to [BabelNet](http://babelnet.org/) to get your API key.
 
-3 When executing a Java program that imports and uses the Dr. Inventor Framework you need to:
+4 When executing a Java program that imports and uses the Dr. Inventor Framework you need to:
 
   * specify the local path to the Dr. Inventor Framework Property file by one of the following methods:
 
