@@ -11,8 +11,7 @@ This documentation includes detailed information concerning the [architecture](C
 
 * [Introduction](Introduction.md)
 * [References](References.md)
-* [PDF-to-text converter](PDFtoText.md)
-* [Version](Version.md)
+* [Versions](Version.md)
 
 <h3>Architecture</h3>
 
@@ -31,7 +30,7 @@ This documentation includes detailed information concerning the [architecture](C
 * [Initialize the library](Initialize.md)
 * [Import scientific publications](ImportDoc.md)
 * [Process scientific publications](ProcessDoc.md)
-* [The scientific publication data model](ScuPubDataModel.md)
+* [The Scientific Publication Data Model](ScuPubDataModel.md)
 * [Store processing results](StoreDoc.md)
 * [FAQ](FAQ.md)
 

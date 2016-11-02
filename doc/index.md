@@ -11,7 +11,6 @@ This documentation includes detailed information concerning the [architecture](C
 
 * [Introduction](Introduction.md)
 * [References](References.md)
-* [PDF-to-text converter](PDFtoText.md)
 * [Version](Version.md)
 
 <h3>Architecture</h3>
