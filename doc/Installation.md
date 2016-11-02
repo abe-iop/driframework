@@ -47,12 +47,10 @@ Once imported the library and its dependences, the following step should be carr
    -  the value of the _babelnet.APIkey_ property equal to your BabelNet API Key - register to [BabelNet](http://babelnet.org/) to get your API key
 4.  When executing a Java program that imports and uses the Dr. Inventor Framework you need to specify the local path to the Dr. Inventor Framework Property file by one of the following methods:
    -  by means of a system property passed as the Java VM argument: _-DDRIpropertyFile=DRI-PROPERTY-FILE-LOCAL-PATH_
-   -  by means of the following initialization code / instruction: 
-
-```javascript
-Factory.setDRIPropertyFilePath("DRI-PROPERTY-FILE-LOCAL-PATH");
-```
-
+   -  by means of the following initialization code / instruction:
+   ```javascript
+   Factory.setDRIPropertyFilePath("DRI-PROPERTY-FILE-LOCAL-PATH");
+   ```
 5. it is important to specify the Java VM argument: _-Xmx5096m_ in order to enable an heap size equal or greater than 5Gb
  
 
