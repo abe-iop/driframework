@@ -25,7 +25,7 @@ There are two approaches to import the Dr. Inventor Text Mining Framework java l
 	</repository>
 </repositories>
 ```
-and the following dependency (the number of the latest version of the Dr. Inventor Text Mining Framework can be retrieved on the top of the [Index page](Index)):
+and the following dependency (see the [latest version number](Index):
 
 ```javascript
 <dependency>
