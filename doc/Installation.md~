@@ -13,9 +13,8 @@ In order to use the Dr. Inventor Text Mining Framework you should:
 In order to import the Dr. Inventor Text Mining Framework in your Java project you have to perform the following two steps:
 
 ### STEP 1: Import the Java library
-There are two approaches to import the Dr. Inventor Text Mining Framework Java library:
-**Apprach A**: If you are using Maven, add to the POM of your Maven project the following repository:
-
+There are two approaches to import the Dr. Inventor Text Mining Framework Java library:  
+**Apprach A**: If you are using Maven, add to the POM of your Maven project the following repository:  
 ```javascript
 <repositories>
 	<repository>
@@ -24,17 +23,15 @@ There are two approaches to import the Dr. Inventor Text Mining Framework Java l
 		<url>http://backingdata.org/dri/library/mavenRepo/</url>
 	</repository>
 </repositories>
-```
-and the following dependency (the number of the latest version of the Dr. Inventor Text Mining Framework can be retrieved on the top of the [Index page](Index)):
-
+```  
+and the following dependency (the number of the latest version of the Dr. Inventor Text Mining Framework can be retrieved on the top of the [Index page](Index)):  
 ```javascript
 <dependency>
 	<groupId>edu.upf.taln.dri</groupId>
 	<artifactId>lib</artifactId>
 	<version>LATEST-VERSION-NUMBER-GOES-HERE</version>
 </dependency>
-```
-
+```  
 **Apprach B**: You can download [this compressed file](http://backingdata.org/dri/library/latest/jarWithDeps.html) including the library JAR together with all its dependencies so as to improt them in your Java code.
 
 ### STEP 2: Configure the library
