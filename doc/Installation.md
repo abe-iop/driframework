@@ -4,6 +4,7 @@ In order to properly use the Dr. Inventor Text Mining Framework you need to sati
 
 ## System requirements
 In order to use the Dr. Inventor Text Mining Framework you should:
+
 * use *Java 1.8*
 * set the maximum [Java Heap Space](https://www.mkyong.com/java/find-out-your-java-heap-memory-size/) equal or greater than *5Gb* (by means of Virtual Machine arguments -Xmx4500m, or by means of system properties)
 
@@ -31,11 +32,11 @@ and the following dependency (the number of the latest version of the Dr. Invent
 <dependency>
 	<groupId>edu.upf.taln.dri</groupId>
 	<artifactId>lib</artifactId>
-	<version>LATEST_</version>
+	<version>LATEST-VERSION-NUMBER-GOES-HERE</version>
 </dependency>
 ```
 
-2. If you want to import directly the dependency of the library in your java code, download the JAR / dependencies at the following link: jar of the library together the libraries it depends on (lib folder).
+2. If you want to import directly the library together with all its dependencies in your java code, download the JAR / dependencies at the following link  jar of the library together the libraries it depends on (lib folder).
 
 ### STEP 2: Configure the library
 once imported the library and its dependences, the following step should be carried out:

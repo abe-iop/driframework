@@ -25,17 +25,17 @@ There are two approaches to import the Dr. Inventor Text Mining Framework java l
 	</repository>
 </repositories>
 ```
-and the following dependency (see the [latest version number](Index):
+and the following dependency (the number of the latest version of the Dr. Inventor Text Mining Framework can be retrieved on the top of the [Index page](Index)):
 
 ```javascript
 <dependency>
 	<groupId>edu.upf.taln.dri</groupId>
 	<artifactId>lib</artifactId>
-	<version>LATEST_</version>
+	<version>LATEST-VERSION-NUMBER-GOES-HERE</version>
 </dependency>
 ```
 
-2. If you want to import directly the dependency of the library in your java code, download the JAR / dependencies at the following link: jar of the library together the libraries it depends on (lib folder).
+2. If you want to import directly the library together with all its dependencies in your java code, download the JAR / dependencies at the following link  jar of the library together the libraries it depends on (lib folder).
 
 ### STEP 2: Configure the library
 once imported the library and its dependences, the following step should be carried out:
