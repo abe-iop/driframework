@@ -10,7 +10,7 @@ In order to use the Dr. Inventor Text Mining Framework you should:
 
 In order to import the Dr. Inventor Text Mining Framework in your Java project you have to perform the following two steps:
 
-### STEP 1: Import the library
+### STEP 1: Import the Java library
 There are two approaches to import the Dr. Inventor Text Mining Framework Java library:  
 **Approach A**: If you are using Maven, add to the POM of your Maven project the following repository:  
 ```javascript

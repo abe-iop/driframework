@@ -31,7 +31,7 @@ This documentation includes detailed information concerning the [architecture](C
 * [Initialize the library](Initialize.md)
 * [Import scientific publications](ImportDoc.md)
 * [Process scientific publications](ProcessDoc.md)
-* [Browse the scientific publication data model](BrowseDoc.md)
+* [The Scientific Publication Data Model](ScuPubDataModel.md)
 * [Store processing results](StoreDoc.md)
 * [FAQ](FAQ.md)
 
