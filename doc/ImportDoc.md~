@@ -40,18 +40,18 @@ Document doc_JATSpaperFromFile = Factory.getJATSloader().parseJATS(new File(JATS
 Similarly to PDF and JATS XML files, it is possible to import plain texts by means of one of the following four approaches:
 ```java
 // Import a plain text file from full local path:
-Document docPDFpaperFromPath = Factory.getPlainTextLoader().parsePlainText(PLAIN-TEXT-LOCAL-FILE-PATH);
+Document doc_PLAINTEXTpaperFromPath = Factory.getPlainTextLoader().parsePlainText(PLAIN-TEXT-LOCAL-FILE-PATH);
 
 // Import a plain text file by downloading it from its URL:
-Document docPDFpaperFromURL = Factory.getPlainTextLoader().parsePlainText(new URL("http://myexample.com/plainText.txt"));
+Document doc_PLAINTEXTpaperFromURL = Factory.getPlainTextLoader().parsePlainText(new URL("http://myexample.com/plainText.txt"));
 
 // Import a plain text file by passing a File instance:
-Document doc_PDFpaperFromFile = Factory.getPlainTextLoader().parsePlainText(new File(PLAIN-TEXT-LOCAL-FILE-PATH));
+Document doc_PLAINTEXTpaperFromFile = Factory.getPlainTextLoader().parsePlainText(new File(PLAIN-TEXT-LOCAL-FILE-PATH));
 
 // Import a plain text file by passing a File instance:
 String stringPlainText = "This is the plain text to process.";
 String documentName = "Reference name for the plain text to process.";
-Document doc_PDFpaperFromFile = Factory.getPlainTextLoader().parseString(stringPlainText, documentName);
+Document doc_PLAINTEXTpaperFromFile = Factory.getPlainTextLoader().parseString(stringPlainText, documentName);
 ```  
 
 *IMPORTANT*: if the Document instance returned by the previous methods is null, there has been some problem in the plain text import process (inspect the program log for more details).

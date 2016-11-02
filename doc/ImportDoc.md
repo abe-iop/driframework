@@ -1,6 +1,6 @@
 The Dr. Inventor Text Mining Framework can extract and enrich the contents of scientific publications both in PDF and [JATS XML](https://jats.nlm.nih.gov/publishing/tag-library/1.1/index.html) formats. It is also possible to analize the contents of plain text excerpts.
 
-Once imported, the contents of a paper can be accessed by means of the method of the interface Document (see [Javadoc](http://backingdata.org/dri/library/latest/javadoc.html)): the Document interface exposes the core set of method useful to retrieve the scturcutred, semantically-rich information mined from a paper. This methods return instances of the objects of the [Scientific Publication Data Model](ScuPubDataModel) defined by the dr. Inventor Frameowrk: this data model represents by means of java objects all the information mined form a scientific publication.
+Once imported, the contents of a paper can be accessed by means of the method of the interface Document (see [Javadoc](http://backingdata.org/dri/library/latest/javadoc.html)): the Document interface exposes the core set of method useful to retrieve the scturcutred, semantically-rich information mined from a paper. This methods return instances of the objects of the [Scientific Publication Data Model](ScuPubDataModel) defined by the Dr. Inventor Frameowrk: this data model represents by means of java objects all the information mined form a scientific publication.
 
 
 ## Import PDF papers
@@ -40,18 +40,18 @@ Document doc_JATSpaperFromFile = Factory.getJATSloader().parseJATS(new File(JATS
 Similarly to PDF and JATS XML files, it is possible to import plain texts by means of one of the following four approaches:
 ```java
 // Import a plain text file from full local path:
-Document docPDFpaperFromPath = Factory.getPlainTextLoader().parsePlainText(PLAIN-TEXT-LOCAL-FILE-PATH);
+Document doc_PLAINTEXTpaperFromPath = Factory.getPlainTextLoader().parsePlainText(PLAIN-TEXT-LOCAL-FILE-PATH);
 
 // Import a plain text file by downloading it from its URL:
-Document docPDFpaperFromURL = Factory.getPlainTextLoader().parsePlainText(new URL("http://myexample.com/plainText.txt"));
+Document doc_PLAINTEXTpaperFromURL = Factory.getPlainTextLoader().parsePlainText(new URL("http://myexample.com/plainText.txt"));
 
 // Import a plain text file by passing a File instance:
-Document doc_PDFpaperFromFile = Factory.getPlainTextLoader().parsePlainText(new File(PLAIN-TEXT-LOCAL-FILE-PATH));
+Document doc_PLAINTEXTpaperFromFile = Factory.getPlainTextLoader().parsePlainText(new File(PLAIN-TEXT-LOCAL-FILE-PATH));
 
 // Import a plain text file by passing a File instance:
 String stringPlainText = "This is the plain text to process.";
 String documentName = "Reference name for the plain text to process.";
-Document doc_PDFpaperFromFile = Factory.getPlainTextLoader().parseString(stringPlainText, documentName);
+Document doc_PLAINTEXTpaperFromFile = Factory.getPlainTextLoader().parseString(stringPlainText, documentName);
 ```  
 
 *IMPORTANT*: if the Document instance returned by the previous methods is null, there has been some problem in the plain text import process (inspect the program log for more details).
