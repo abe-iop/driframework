@@ -14,7 +14,7 @@ In order to import the Dr. Inventor Text Mining Framework in your Java project y
 
 ### STEP 1: Import the Java library
 There are two approaches to import the Dr. Inventor Text Mining Framework Java library:  
-**Apprach A**: If you are using Maven, add to the POM of your Maven project the following repository:  
+**Approach A**: If you are using Maven, add to the POM of your Maven project the following repository:  
 ```javascript
 <repositories>
 	<repository>
@@ -31,11 +31,13 @@ and the following dependency (the number of the latest version of the Dr. Invent
 	<artifactId>lib</artifactId>
 	<version>LATEST-VERSION-NUMBER-GOES-HERE</version>
 </dependency>
-```  
-**Apprach B**: You can download [this compressed file](http://backingdata.org/dri/library/latest/jarWithDeps.html) including the library JAR together with all its dependencies so as to improt them in your Java code.
+```
+
+**Approach B**: You can download [this compressed file](http://backingdata.org/dri/library/latest/jarWithDeps.html) including the library JAR together with all its dependencies so as to improt them in your Java code.
 
 ### STEP 2: Configure the library
 Once imported the library and its dependences, the following step should be carried out:
+
  1. Download and extract [Dr. Inventor Framework Resources folder](http://backingdata.org/dri/library/latest/resourceFolder.html)
 
  2. Download [Dr. Inventor Framework Property file](http://backingdata.org/dri/library/latest/configurationFile.html)
@@ -58,9 +60,13 @@ Once imported the library and its dependences, the following step should be carr
 
 ## How to update from an older version
 When you update from an older to a newer version of the Dr. Inventor Text Mining Framework you shuould perform the following steps:
-1.  If the library is imported by Maven, update the library version number of the dependency in your POM
-2.  If the JAR of the library is imported by downloading the JAR together with all its dependencies, [download the compressed file](http://backingdata.org/dri/library/latest/jarWithDeps.html) including the latest JARs (library together with its dependencies)
-3.  Download the new [Dr. Inventor Framework Resources folder](http://backingdata.org/dri/library/latest/resourceFolder.html)
-4.  Download the new [Dr. Inventor Framework Property file](http://backingdata.org/dri/library/latest/configurationFile.html) and replace this file to its old version if any. Properly modify the properties of the new Dr. Inventor Framework Property file by specifying the local path of the new Dr Inventor Library Resources folder and in case the other property values previously described in this page (STEP 2: COnfigure the library).
+
+ 1.  If the library is imported by Maven, update the library version number of the dependency in your POM
+
+ 2.  If the JAR of the library is imported by downloading the JAR together with all its dependencies, [download the compressed file](http://backingdata.org/dri/library/latest/jarWithDeps.html) including the latest JARs (library together with its dependencies)
+
+ 3.  Download the new [Dr. Inventor Framework Resources folder](http://backingdata.org/dri/library/latest/resourceFolder.html)
+
+ 4.  Download the new [Dr. Inventor Framework Property file](http://backingdata.org/dri/library/latest/configurationFile.html) and replace this file to its old version if any. Properly modify the properties of the new Dr. Inventor Framework Property file by specifying the local path of the new Dr Inventor Library Resources folder and in case the other property values previously described in this page (STEP 2: COnfigure the library).
 
 Remember that each version of the library comes with its own Dr. Inventor Framework Resources folder and its own Dr. Inventor Framework Property file. You should update both these resources as explained when switching to another version of the Dr. Inventor Framework.
