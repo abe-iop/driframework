@@ -40,6 +40,7 @@ and the following dependency (the number of the latest version of the Dr. Invent
 
 ### STEP 2: Configure the library
 Once imported the library and its dependences, the following step should be carried out:
+
 1 Download and extract [Dr. Inventor Framework Resources folder](http://backingdata.org/dri/library/latest/resourceFolder.html)
 2 Download [Dr. Inventor Framework Property file](http://backingdata.org/dri/library/latest/configurationFile.html) 
 2 Modify the Dr. Inventor Framework Property file by setting:
@@ -57,6 +58,7 @@ Factory.setDRIPropertyFilePath("DRI-PROPERTY-FILE-LOCAL-PATH");
 
 ## How to update from an older version
 When you update from an older to a newer version of the Dr. Inventor Text Mining Framework you shuould perform the following steps:
+
   * If the library is imported by Maven, update the library version number of the dependency in your Maven POM
   * If the JAR of the library is imported by downloading the JAR together with all its dependencies, [download the compressed file](http://backingdata.org/dri/library/latest/jarWithDeps.html) including the latest JARs (library together with its dependencies)
   * Download the new [Dr. Inventor Framework Resources folder](http://backingdata.org/dri/library/latest/resourceFolder.html)
