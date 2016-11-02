@@ -58,6 +58,7 @@ Once imported the library and its dependences, the following step should be carr
 ```javascript
 Factory.setDRIPropertyFilePath("DRI-PROPERTY-FILE-LOCAL-PATH");
 ```
+
   * it is important to specify the Java VM argument: _-Xmx5096m_ in order to enable an heap size equal or greater than 5Gb
  
 
