@@ -20,6 +20,21 @@
 		</repository>
 	</repositories>
 
+	<build>
+		<plugins>
+			<!-- Compiler directives - compatibility -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.3</version>
+				<configuration>
+					<source>${jdk.version}</source>
+					<target>${jdk.version}</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
 	<dependencies>
 		<dependency>
 			<groupId>edu.upf.taln.dri</groupId>

@@ -1,8 +1,12 @@
 package edu.upf.taln.dri.client;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.List;
 
-import edu.upf.taln.dri.lib.Factory;
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
+
 import edu.upf.taln.dri.lib.exception.DRIexception;
 import edu.upf.taln.dri.lib.model.Document;
 import edu.upf.taln.dri.lib.model.ext.Citation;
@@ -10,7 +14,7 @@ import edu.upf.taln.dri.lib.model.ext.Section;
 import edu.upf.taln.dri.lib.model.ext.Sentence;
 import edu.upf.taln.dri.lib.model.ext.SentenceSelectorENUM;
 import edu.upf.taln.dri.lib.model.ext.SummaryTypeENUM;
-import edu.upf.taln.dri.lib.model.graph.DependencyGraph;
+import edu.upf.taln.dri.lib.model.util.DocParse;
 import edu.upf.taln.dri.lib.util.PDFtoTextConvMethod;
 
 
@@ -23,13 +27,15 @@ import edu.upf.taln.dri.lib.util.PDFtoTextConvMethod;
 public class ParsePaper {
 
 	public static void main(String[] args) {
-
+		
+		Logger.getRootLogger().setLevel(Level.ALL);
+		
 		// 1) Set the property folder
 		Factory.setDRIPropertyFilePath("/home/francesco/Desktop/DRILIB_EXP/DRIconfig.properties");
 
 		// 2) Programmatically configure the PDF processing options 
 		Factory.setPDFtoTextConverter(PDFtoTextConvMethod.GROBID);
-		Factory.setEnableBibEntryParsing(true);
+		Factory.setEnableBibEntryParsing(false);
 
 		// 3) Initialize the library - preload the resources needed to process scientific publications
 		try {
@@ -39,10 +45,35 @@ public class ParsePaper {
 			e.printStackTrace();
 		}
 
-		// 4) Load PDF from local file
+		// 4.A) Load PDF from URL
+		Document doc_PDFpaperURL = null;
+		try {
+			doc_PDFpaperURL = Factory.getPDFloader().parsePDF(new URL("http://www2007.org/workshops/paper_45.pdf"));
+
+		} catch (DRIexception e) {
+			System.out.println("Error while importing a PDF file in the Dr. Inventor Text Mining Framework!");
+			e.printStackTrace();
+		} catch (MalformedURLException e) {
+			System.out.println("Error with URL format.");
+			e.printStackTrace();
+		}
+
+		// 4.B) Load PDF from URL
+		Document doc_JATSpaperURL = null;
+		try {
+			doc_JATSpaperURL = Factory.getJATSloader().parseJATS(new URL("http://journals.plos.org/plosone/article/asset?id=10.1371/journal.pone.0138120.XML"));
+		} catch (DRIexception e) {
+			System.out.println("Error while importing a PDF file in the Dr. Inventor Text Mining Framework!");
+			e.printStackTrace();
+		} catch (MalformedURLException e) {
+			System.out.println("Error with URL format.");
+			e.printStackTrace();
+		}
+
+		// 4.C) Load PDF from local file
 		Document doc_PDFpaperFILE = null;
 		try {
-			String PDF_FILE_PATH = "/home/francesco/Downloads/paper_PUBMED_1.pdf";
+			String PDF_FILE_PATH = "/home/francesco/Downloads/APPO_DRI_PARSING/NEW_FOLDER/paper3.pdf";
 			doc_PDFpaperFILE = Factory.getPDFloader().parsePDF(PDF_FILE_PATH);
 		} catch (DRIexception e) {
 			System.out.println("Error while importing a PDF file in the Dr. Inventor Text Mining Framework!");
@@ -75,7 +106,7 @@ public class ParsePaper {
 			for(Section rootSect : rootSectsList) {
 				System.out.println("ROOT SECTION > " + rootSect.asString(true));
 			}
-			
+
 			// 8.A) Get summary by ranking sentences by the centroid method
 			List<Sentence> summarySentences_CENTROID = doc_PDFpaperFILE.extractSummary(20, SummaryTypeENUM.CENTROID_SECT);
 			for(Sentence sent : summarySentences_CENTROID) {
@@ -87,10 +118,16 @@ public class ParsePaper {
 			for(Sentence sent : summarySentences_TITLE) {
 				System.out.println(sent.getText());
 			}
-			
-			// 8) Extract abstract sentences from a Dr. Inventor Document (ordered)
-						DependencyGraph docGraph = doc_PDFpaperFILE.extractDocumentGraph(SentenceSelectorENUM.ONLY_ABSTRACT);
 
+			// 9) Get the ROS CSV of the ABSTRACT
+			String abstractCSV_ROS = DocParse.getDocumentROSasCSVstring(doc_PDFpaperFILE, SentenceSelectorENUM.ONLY_ABSTRACT);
+			System.out.println(abstractCSV_ROS);
+
+			// 10) Get raw text
+			String rawText = doc_PDFpaperFILE.getRawText();
+
+			// 11) Get XML representation of the paper (GATE XML)
+			String XMLText = doc_PDFpaperFILE.getXMLString();
 
 		} catch (DRIexception e) {
 			System.out.println("Error while extracting data from PDF file by means of the Dr. Inventor Text Mining Framework!");
