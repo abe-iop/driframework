@@ -14,7 +14,16 @@ The Dr. Inventor Framework implements the following paper analysis principles:
 
 
 ## Get the Header
+```java
+// Import a PDF paper from full local path:
+Document docPDFpaperFromPath = Factory.getPDFloader().parsePDF(PDF-PAPER-LOCAL-FILE-PATH);
 
+// Import a PDF paper by downloading it from its URL:
+Document docPDFpaperFromURL = Factory.getPDFloader().parsePDF(new URL("http://www2007.org/workshops/paper_45.pdf"));
+
+// Import a PDF paper by passing a File instance:
+Document doc_PDFpaperFromFile = Factory.getPDFloader().parsePDF(new File(PDF-PAPER-LOCAL-FILE-PATH));
+```  
 
 ## Browse the structure of Sections
 

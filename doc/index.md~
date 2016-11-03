@@ -15,7 +15,7 @@ This documentation includes detailed information concerning the [architecture](C
 
 <h3>Architecture</h3>
 
-* [Overview](ArchitectureOverview.md)
+* [Overview](Components.md)
 * [PDF to text converter](PDFtoText.md)
 * [Citation analyzer](Citation.md)
 * [Rhetorical sentence classifier](RhetSentence.md)
